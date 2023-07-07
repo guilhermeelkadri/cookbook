@@ -32,7 +32,7 @@ int main()
 {
     // initializer list
     tuple<int, string, float> t1 = {10, "ten", 100.1};
-    message("initializer list ");
+    message("initializer list");
     printTuple(t1);
     
     // default constructor
@@ -46,11 +46,11 @@ int main()
     printTuple(t3);
 
     // comparison operators
-    message("p1 == p2", (t1 == t2));
-    message("p1 < p2", (t1 < t2));
-    message("p1 < p3", (t1 < t3));
-    message("p1 > p2", (t1 > t2));
-    message("p1 > p3", (t1 > t3));
+    message("t1 == t2", (t1 == t2));
+    message("t1 < t2", (t1 < t2));
+    message("t1 < t3", (t1 < t3));
+    message("t1 > t2", (t1 > t2));
+    message("t1 > t3", (t1 > t3));
 
     return 0;
 }
