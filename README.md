@@ -4,7 +4,7 @@ This repository contains a collection of C++ code examples and exercises to help
 
 ## Directory Descriptions
 
-- **exercises**: This directory contains a set of C++ exercise files that cover various programming concepts and challenges. You can use these exercises to practice and improve your C++ skills.
+- **exercises**: This directory contains a set of C++ exercise files that cover various programming concepts and challenges. These exercises is used to practice and improve C++ skills.
 
 - **STL_containers**: This directory contains examples of using Standard Template Library (STL) containers in C++. The `src` subdirectory further contains individual source files for different STL containers.
 
