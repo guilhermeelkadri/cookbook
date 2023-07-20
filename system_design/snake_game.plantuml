@@ -1,0 +1,53 @@
+@startuml
+
+class SnakeGame {
+  -board: GameBoard
+  -snake: Snake
+  -food: Food
+  +run(): void
+  +handleInput(direction: Direction): void
+}
+
+class GameBoard {
+  -width: int
+  -height: int
+  +draw(): void
+  +clear(): void
+}
+
+class Snake {
+  -body: List<Point>
+  -direction: Direction
+  +move(): void
+  +grow(): void
+  +collidesWithFood(food: Food): boolean
+  +collidesWithSnake(point: Point): boolean
+}
+
+class Food {
+  -position: Point
+  +generateNewPosition(): void
+  +getPosition(): Point
+}
+
+enum Direction {
+  UP
+  DOWN
+  LEFT
+  RIGHT
+}
+
+class Point {
+  -x: int
+  -y: int
+  +getX(): int
+  +getY(): int
+}
+
+SnakeGame --> GameBoard
+SnakeGame --> Snake
+SnakeGame --> Food
+Snake --> Point
+Food --> Point
+
+@enduml
